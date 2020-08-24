@@ -21,14 +21,17 @@
           type="text"
           placeholder="list comma separated dishes you usually have for lunch"
           class="form-control"
-          ng-model="name"
+          ng-model="string"
         />
       </div>
       <div class="form-group">
-        <button class="btn btn-default">Check If Too Much</button>
+        <button class="btn btn-default" ng-click="checkTheFood()">
+          Check If Too Much
+        </button>
       </div>
       <div class="form-group message">
         <!-- Your message can go here. -->
+        <!--{{sayMsg()}}-->
       </div>
     </div>
     <script src="angular.min.js"></script>
